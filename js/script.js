@@ -1,3 +1,4 @@
+// Enjoy!! 🍓
 "use strict";
 
 const cardsContainer = document.querySelector(".cards");
