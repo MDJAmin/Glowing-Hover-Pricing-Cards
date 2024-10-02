@@ -21,3 +21,28 @@ const createOverlayCta = (overlayCard, ctaEl) => {
     overlayCard.append(overlayCta);
   };
   
+  
+const observer = new ResizeObserver((entries) => {
+    entries.forEach((entry) => {
+      const cardIndex = cards.indexOf(entry.target);
+      let width = entry.borderBoxSize[0].inlineSize;
+      let height = entry.borderBoxSize[0].blockSize;
+  
+      if (cardIndex >= 0) {
+        overlay.children[cardIndex].style.width = `${width}px`;
+        overlay.children[cardIndex].style.height = `${height}px`;
+      }
+    });
+  });
+  
+  const initOverlayCard = (cardEl) => {
+    const overlayCard = document.createElement("div");
+    overlayCard.classList.add("card");
+    createOverlayCta(overlayCard, cardEl.lastElementChild);
+    overlay.append(overlayCard);
+    observer.observe(cardEl);
+  };
+  
+  cards.forEach(initOverlayCard);
+  document.body.addEventListener("pointermove", applyOverlayMask);
+  
