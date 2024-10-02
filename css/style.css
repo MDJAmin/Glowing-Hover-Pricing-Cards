@@ -24,7 +24,6 @@ body {
   user-select: none;
 }
 
-
 ul {
   list-style: none;
 }
@@ -91,7 +90,7 @@ ul {
 
 .card__bullets li::before {
   display: inline-block;
- content: " ";
+  content: " ";
   transform: translatey(0.25ch);
   margin-right: 1ch;
 }
