@@ -1,4 +1,5 @@
 // Enjoy!! 🍓
+
 "use strict";
 
 const cardsContainer = document.querySelector(".cards");
@@ -45,3 +46,15 @@ const initOverlayCard = (cardEl) => {
 
 cards.forEach(initOverlayCard);
 document.body.addEventListener("pointermove", applyOverlayMask);
+
+const currentYear = new Date().getFullYear();
+
+cards.forEach((card) => {
+  const startYear = card.dataset.start;
+  const expTextEl = card.querySelector(".exp-text");
+
+  if (expTextEl && startYear) {
+    const years = currentYear - parseInt(startYear, 10);
+    expTextEl.textContent = `${years}+ years experience`;
+  }
+});
