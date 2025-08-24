@@ -1,67 +1,98 @@
 <!-- Enjoy!! 🍓 -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <title>Glowing Hover Card</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Glowing Hover Card</title>
-</head>
+  <body>
+    <main class="main flow">
+      <h1 class="main__heading">Pricing</h1>
+      <div class="main__cards cards">
+        <div class="cards__inner">
+          <div class="cards__card card">
+            <h2 class="card__heading">UI/UX Design</h2>
+            <p class="card__price">$20 – $35/hr</p>
+            <h6 class="card__heading">3+ years experience</h6>
+            <ul
+              role="list"
+              class="card__bullets flow"
+            >
+              Design intuitive and engaging user interfaces Enhance user experience with
+              research-driven insights Create wireframes, prototypes, and design systems Focus
+              on usability, accessibility, and visual appeal
+            </ul>
+            <a
+              href="https://dribbble.com/MDJAmin"
+              class="card__cta cta"
+              >Get Started</a
+            >
+          </div>
 
-<body>
-  <main class="main flow">
-    <h1 class="main__heading">Pricing</h1>
-    <div class="main__cards cards">
-      <div class="cards__inner">
-        <div class="cards__card card">
-          <h2 class="card__heading">FrontEnd</h2>
-          <p class="card__price">$89.99</p>
-          <ul role="list" class="card__bullets flow">
-            <li>
-              the part that users see and interact with, <br />
-              including visual elements like text, graphics, buttons, and
-              checkboxes.
-            </li>
-          </ul>
-          <a href="#frontend" class="card__cta cta">Get Started</a>
+          <div class="cards__card card">
+            <h2 class="card__heading">Video Editing & Content Creation</h2>
+            <p class="card__price">$18 – $30/hr</p>
+            <h6 class="card__heading">5+ years experience</h6>
+            <ul
+              role="list"
+              class="card__bullets flow"
+            >
+              <p>
+                Professional editing to refine raw content into polished material, ensuring
+                clarity, engagement, and brand consistency across all platforms.
+              </p>
+            </ul>
+            <a
+              href="https://www.youtube.com/c/DARKLORDCDL"
+              class="card__cta cta"
+              >Get Started</a
+            >
+          </div>
+
+          <div class="cards__card card">
+            <h2 class="card__heading">Front-End Development</h2>
+            <p class="card__price">$25 – $45/hr</p>
+            <h6 class="card__heading">1+ years experience</h6>
+            <ul
+              role="list"
+              class="card__bullets flow"
+            >
+              the part that users see and interact with, including visual elements like text,
+              graphics, buttons, and checkboxes.
+            </ul>
+            <a
+              href="https://github.com/MDJAmin"
+              class="card__cta cta"
+              >Get Started</a
+            >
+          </div>
         </div>
 
-        <div class="cards__card card">
-          <h2 class="card__heading">BackEnd</h2>
-          <p class="card__price">$68.99</p>
-          <ul role="list" class="card__bullets flow">
-            <li>
-              works on the server-side of a website or software application,
-            </li>
-            <li>
-              creating and maintaining the technical components that users
-              don't see.
-            </li>
-          </ul>
-          <a href="#backend" class="card__cta cta">Get Started</a>
-        </div>
-
-        <div class="cards__card card">
-          <h2 class="card__heading">DevOps</h2>
-          <p class="card__price">$59.99</p>
-          <ul role="list" class="card__bullets flow">
-            <li>
-              DevOps is a software development and IT industry methodology
-            </li>
-            <li>
-              that integrates and automates the work of software development
-              and IT operations.
-            </li>
-          </ul>
-          <a href="#devops" class="card__cta cta">Get Started</a>
-        </div>
+        <div class="overlay cards__inner"></div>
       </div>
-
-      <div class="overlay cards__inner"></div>
+    </main>
+    <div class="MDJAminDiv">
+      <a
+        class="MDJAmin"
+        href="https://github.com/MDJAmin"
+        target="_blank"
+        >MDJAmin</a
+      >
     </div>
-  </main>
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
